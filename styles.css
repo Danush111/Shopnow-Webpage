@@ -181,7 +181,7 @@ footer {
     text-align: center;
     padding: 20px 40px;
     position: relative;
-    bottom: 0px;
+    top: 90px;
     width: 100%;
     box-sizing: border-box;
     background: linear-gradient(45deg, #ffd700, #ffcc00);
