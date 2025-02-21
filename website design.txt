@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopNow E-commerce</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>ShopNow</h1>
+            </div>
+            <div class="menu">
+                <a href="C:\Users\gunda\OneDrive\Desktop\html\index.html">Home</a>
+                <a href="C:\Users\gunda\OneDrive\Desktop\html\Products.html"> Products</a>
+                <a href="C:\Users\gunda\OneDrive\Desktop\html\Contact us.html">Contact us</a>
+                <!-- Cart icon using Font Awesome -->
+                <a href="#" id="cart-icon"><i class="fas fa-shopping-cart"></i> (<span id="cart-count">0</span>)</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Product Section 1 -->
+    <section class="products">
+        <h2>Featured Products</h2>
+        <div class="product-list">
+            <div class="product" id="product-1">
+                <img src="C:\Users\gunda\OneDrive\Desktop\html\images\download.jpg" alt="Product 1">
+                <h3>Product 1</h3>
+                <p>$20.00</p>
+
+                <!-- Rating System -->
+                <div class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <p class="rating-display">Rating: 3/5 Stars</p>
+                </div>
+                <label for="rating-input-1">Rate this product (1-5 stars):</label>
+                <input type="number" id="rating-input-1" min="1" max="5">
+                <button class="submit-rating" data-product="1">Submit Rating</button>
+
+                <!-- Review Section -->
+                <div class="review-section">
+                    <h4>Reviews</h4>
+                    <div class="comments">
+                        <p>"Great product, highly recommend!" - User1</p>
+                        <p>"Not bad, but could be improved." - User2</p>
+                    </div>
+                    <textarea id="comment-input-1" placeholder="Leave a review"></textarea>
+                    <button class="submit-comment" data-product="1">Submit Comment</button>
+                </div>
+
+                <button class="add-to-cart" data-product="1">Add to Cart</button>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product" id="product-2">
+                <img src="C:\Users\gunda\OneDrive\Desktop\html\images\appropriate image for product in an e-commerce webpage with dimensions to fit.png" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>$35.00</p>
+
+                <!-- Rating System -->
+                <div class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <p class="rating-display">Rating: 4/5 Stars</p>
+                </div>
+                <label for="rating-input-2">Rate this product (1-5 stars):</label>
+                <input type="number" id="rating-input-2" min="1" max="5">
+                <button class="submit-rating" data-product="2">Submit Rating</button>
+
+                <!-- Review Section -->
+                <div class="review-section">
+                    <h4>Reviews</h4>
+                    <div class="comments">
+                        <p>"Amazing quality!" - User3</p>
+                        <p>"Slightly overpriced but still a good product." - User4</p>
+                    </div>
+                    <textarea id="comment-input-2" placeholder="Leave a review"></textarea>
+                    <button class="submit-comment" data-product="2">Submit Comment</button>
+                </div>
+
+                <button class="add-to-cart" data-product="2">Add to Cart</button>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product" id="product-3">
+                <img src="C:\Users\gunda\OneDrive\Desktop\html\images\OIP.jpg"alt="Product 3">
+                <h3>Product 3</h3>
+                <p>$50.00</p>
+
+                <!-- Rating System -->
+                <div class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <p class="rating-display">Rating: 4/5 Stars</p>
+                </div>
+                <label for="rating-input-3">Rate this product (1-5 stars):</label>
+                <input type="number" id="rating-input-3" min="1" max="5">
+                <button class="submit-rating" data-product="3">Submit Rating</button>
+
+                <!-- Review Section -->
+                <div class="review-section">
+                    <h4>Reviews</h4>
+                    <div class="comments">
+                        <p>"Great value for money." - User5</p>
+                        <p>"Really happy with my purchase!" - User6</p>
+                    </div>
+                    <textarea id="comment-input-3" placeholder="Leave a review"></textarea>
+                    <button class="submit-comment" data-product="3">Submit Comment</button>
+                </div>
+
+                <button class="add-to-cart" data-product="3">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Section 2 -->
+    <section class="products">
+        <h2>More Products</h2>
+        <div class="product-list">
+            <!-- Product 4 -->
+            <div class="product" id="product-4">
+                <img src="C:\Users\gunda\OneDrive\Desktop\html\images\download (1).jpg" alt="Product 4">
+                <h3>Product 4</h3>
+                <p>$25.00</p>
+
+                <!-- Rating System -->
+                <div class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <p class="rating-display">Rating: 3/5 Stars</p>
+                </div>
+                <label for="rating-input-4">Rate this product (1-5 stars):</label>
+                <input type="number" id="rating-input-4" min="1" max="5">
+                <button class="submit-rating" data-product="4">Submit Rating</button>
+
+                <!-- Review Section -->
+                <div class="review-section">
+                    <h4>Reviews</h4>
+                    <div class="comments">
+                        <p>"Nice, but could be better." - User7</p>
+                    </div>
+                    <textarea id="comment-input-4" placeholder="Leave a review"></textarea>
+                    <button class="submit-comment" data-product="4">Submit Comment</button>
+                </div>
+
+                <button class="add-to-cart" data-product="4">Add to Cart</button>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product" id="product-5">
+                <img src="C:\Users\gunda\OneDrive\Desktop\html\images\OIP (1).jpg" alt="Product 5">
+                <h3>Product 5</h3>
+                <p>$40.00</p>
+
+                <!-- Rating System -->
+                <div class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <p class="rating-display">Rating: 4/5 Stars</p>
+                </div>
+                <label for="rating-input-5">Rate this product (1-5 stars):</label>
+                <input type="number" id="rating-input-5" min="1" max="5">
+                <button class="submit-rating" data-product="5">Submit Rating</button>
+
+                <!-- Review Section -->
+                <div class="review-section">
+                    <h4>Reviews</h4>
+                    <div class="comments">
+                        <p>"Great purchase, I'm satisfied." - User8</p>
+                    </div>
+                    <textarea id="comment-input-5" placeholder="Leave a review"></textarea>
+                    <button class="submit-comment" data-product="5">Submit Comment</button>
+                </div>
+
+                <button class="add-to-cart" data-product="5">Add to Cart</button>
+            </div>
+
+           <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 ShopNow. All rights reserved.</p>
+    </footer>
+
+ <script src="script.js"></script>
+</body>
+</html>
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! CONTACT US PAGE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        /* Navbar styles */
+        header {
+            background-color: #FFC000; /* Golden color */
+            padding: 15px 20px;
+            border-radius: 20px; /* Added border radius to the header */
+            margin: 20px;
+        }
+        header nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 10px 20px;
+        }
+        .logo h1 {
+            color: #fff;
+            margin: 0;
+        }
+        .menu a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 16px;
+        }
+        .menu a:hover {
+            color: #333; /* Dark color for hover */
+        }
+
+        /* Main content styles */
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #FFC000;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 14px;
+            color: #555;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #ff0000;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<header>
+    <nav>
+        <div class="logo">
+            <h1>ShopNow</h1>
+        </div>
+        <div class="menu">
+            <a href="C:\Users\gunda\OneDrive\Desktop\html\index.html">Home</a>
+            <a href="C:\Users\gunda\OneDrive\Desktop\html\products.html">Products</a>
+            <a href="C:\Users\gunda\OneDrive\Desktop\html\Contact us.html">Contact Us</a>
+        </div>
+    </nav>
+</header>
+
+<!-- Contact Form -->
+<div class="container">
+    <h1>Contact Us</h1>
+    <form action="/submit" method="post">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Your email address" required>
+
+        <label for="mobile">Mobile number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Your Mobile number" required>
+
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" rows="4" placeholder="Write your message" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  CSS CODE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+/* Set a background texture */
+body {
+    background: url('https://www.transparenttextures.com/patterns/gray-wall.png'); /* Example texture */
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Navbar styling with golden gradient background and border radius */
+header {
+    background: linear-gradient(45deg, #ffd700, #ffcc00); /* Golden gradient */
+    padding: 20px 40px; /* Reduced padding for compactness */
+    position: relative;
+    box-sizing: border-box; /* Ensures the padding doesn't affect width */
+    border-radius: 20px; /* Adds rounded corners to the header */
+    margin: 20px; /* Adds space around the header */
+    overflow: hidden; /* Prevents content from spilling out when applying border-radius */
+}
+
+/* Logo Styling */
+header .logo h1 {
+    color: white;
+    margin: 0;
+    font-size: 26px; /* Adjusted font size for better readability */
+}
+
+/* Menu styling */
+header .menu {
+    position: absolute;
+    right: 40px; /* Distance from the right */
+    top: 50%; /* Moves the menu to the middle vertically */
+    transform: translateY(-50%); /* Adjusts the exact middle alignment */
+    display: flex;
+}
+
+header .menu a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 18px; /* Adjusted padding for better spacing */
+    font-size: 18px;
+    margin-left: 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+header .menu a:hover {
+    background-color: #555;
+}
+
+#cart-icon i {
+    margin-right: 5px; /* Space between cart icon and text */
+}
+
+/* Product section styling */
+.products {
+    text-align: center;
+    padding: 50px 20px; /* Added padding around section */
+    background-color: white; /* Ensure products section has a white background for contrast */
+    box-sizing: border-box;
+}
+
+.products h2 {
+    font-size: 36px; /* Increased font size for a bigger heading */
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap; /* Allows products to wrap on smaller screens */
+    justify-content: center; /* Center the products */
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.product {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 280px; /* Adjusted product width for better spacing */
+    text-align: center;
+    box-sizing: border-box;
+    transition: transform 0.3s ease; /* Smooth hover effect for product */
+}
+
+.product:hover {
+    transform: translateY(-10px); /* Slight lift effect on hover */
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    transition: transform 0.3s ease; /* Smooth zoom-in effect */
+}
+
+.product img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.product h3 {
+    font-size: 22px; /* Increased font size for better readability */
+    margin: 15px 0 10px 0;
+}
+
+.product p {
+    font-size: 18px;
+    color: #888;
+    margin-bottom: 15px; /* Added space below price */
+}
+
+/* Product button styling */
+.product button {
+    background-color: #ff0000; /* Bright red color */
+    color: white;
+    border: none;
+    padding: 14px 30px; /* Adjusted padding for a larger button */
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.product button:hover {
+    background-color: #e60000; /* Darker red for hover effect */
+}
+
+
+/* Rating Stars */
+.rating {
+    color: gold;
+    font-size: 18px;
+}
+
+.checked {
+    color: gold; /* Gold color for filled stars */
+}
+
+/* Review Section */
+.review-section {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+.review-section h4 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+
+/* Footer styling */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 40px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background: linear-gradient(45deg, #ffd700, #ffcc00);
+}
+
+
+
+
+
+
+
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!! JAVA SCRIPT CODE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+let cart = [];
+
+// Function to update cart count
+function updateCartCount() {
+    const cartCountElement = document.getElementById('cart-count');
+    cartCountElement.textContent = cart.length;
+}
+
+// Function to handle "Add to Cart" button
+function addToCart(productId) {
+    cart.push(productId);
+    updateCartCount();
+}
+
+// Event listeners for the "Add to Cart" buttons
+const addToCartButtons = document.querySelectorAll('.add-to-cart');
+addToCartButtons.forEach(button => {
+    button.addEventListener('click', function() {
+        const productId = this.dataset.product;
+        addToCart(productId);
+    });
+});
+
+// Function to handle rating submission
+function submitRating(productId) {
+    const rating = document.querySelector(`#rating-input-${productId}`).value;
+    if (rating >= 1 && rating <= 5) {
+        const product = document.querySelector(`#product-${productId}`);
+        const ratingDisplay = product.querySelector('.rating-display');
+        ratingDisplay.textContent = `Rating: ${rating} stars`;
+        alert(`You rated Product ${productId} with ${rating} stars`);
+    } else {
+        alert('Please enter a rating between 1 and 5.');
+    }
+}
+
+// Function to handle comment submission
+function submitComment(productId) {
+    const commentInput = document.querySelector(`#comment-input-${productId}`).value;
+    if (commentInput.trim() !== "") {
+        const product = document.querySelector(`#product-${productId}`);
+        const commentsSection = product.querySelector('.comments');
+        const newComment = document.createElement('p');
+        newComment.textContent = commentInput;
+        commentsSection.appendChild(newComment);
+        document.querySelector(`#comment-input-${productId}`).value = ''; // Clear input field
+        alert('Your comment has been added!');
+    } else {
+        alert('Please enter a comment.');
+    }
+}
+
+// Event listeners for the "Submit Rating" and "Submit Comment" buttons
+const submitRatingButtons = document.querySelectorAll('.submit-rating');
+submitRatingButtons.forEach(button => {
+    button.addEventListener('click', function() {
+        const productId = this.dataset.product;
+        submitRating(productId);
+    });
+});
+
+const submitCommentButtons = document.querySelectorAll('.submit-comment');
+submitCommentButtons.forEach(button => {
+    button.addEventListener('click', function() {
+        const productId = this.dataset.product;
+        submitComment(productId);
+    });
+});
