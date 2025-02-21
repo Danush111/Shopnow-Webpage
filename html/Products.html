@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopNow E-commerce</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Water Droplets -->
+    <div class="droplet"></div>
+    <div class="droplet"></div>
+    <div class="droplet"></div>
+    <div class="droplet"></div>
+    <div class="droplet"></div>
+
+    <!-- Snowflakes -->
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>ShopNow</h1>
+            </div>
+            <div class="menu">
+                <a href="C:\Users\gunda\OneDrive\Desktop\html\index.html">Home</a>
+                <a href="C:\Users\gunda\OneDrive\Desktop\html\Products.html"> Products</a>
+                <a href="C:\Users\gunda\OneDrive\Desktop\html\Contact us.html">Contact us</a>
+                <!-- Cart icon using Font Awesome -->
+                <a href="#" id="cart-icon"><i class="fas fa-shopping-cart"></i> (<span id="cart-count">0</span>)</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Product Section 1 -->
+    <section class="products">
+        <h2>Featured Products</h2>
+        <div class="product-list">
+            <!-- Product 1 -->
+            <div class="product" id="product-1">
+                <img src="C:\Users\gunda\OneDrive\Desktop\html\images\hoody.jpg" alt="Product 1">
+                <h3>Product 1</h3>
+                <p>20.00</p>
+
+                <!-- Rating System -->
+                <div class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <p class="rating-display">Rating: 3/5 Stars</p>
+                </div>
+                <label for="rating-input-1">Rate this product (1-5 stars):</label>
+                <input type="number" id="rating-input-1" min="1" max="5">
+                <button class="submit-rating" data-product="1">Submit Rating</button>
+
+                <!-- Review Section -->
+                <div class="review-section">
+                    <h4>Reviews</h4>
+                    <div class="comments">
+                        <p>"Great product, highly recommend!" - User1</p>
+                        <p>"Not bad, but could be improved." - User2</p>
+                    </div>
+                    <textarea id="comment-input-1" placeholder="Leave a review"></textarea>
+                    <button class="submit-comment" data-product="1">Submit Comment</button>
+                </div>
+
+                <button class="add-to-cart" data-product="1">Add to Cart</button>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product" id="product-2">
+                <img src="C:\Users\gunda\OneDrive\Desktop\html\images\hoody1" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>35.00</p>
+
+                <!-- Rating System -->
+                <div class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <p class="rating-display">Rating: 4/5 Stars</p>
+                </div>
+                <label for="rating-input-2">Rate this product (1-5 stars):</label>
+                <input type="number" id="rating-input-2" min="1" max="5">
+                <button class="submit-rating" data-product="2">Submit Rating</button>
+
+                <!-- Review Section -->
+                <div class="review-section">
+                    <h4>Reviews</h4>
+                    <div class="comments">
+                        <p>"Amazing quality!" - User3</p>
+                        <p>"Slightly overpriced but still a good product." - User4</p>
+                    </div>
+                    <textarea id="comment-input-2" placeholder="Leave a review"></textarea>
+                    <button class="submit-comment" data-product="2">Submit Comment</button>
+                </div>
+
+                <button class="add-to-cart" data-product="2">Add to Cart</button>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product" id="product-3">
+                <img src="C:\Users\gunda\OneDrive\Desktop\html\images\hoody3" alt="Product 3">
+                <h3>Product 3</h3>
+                <p>50.00</p>
+
+                <!-- Rating System -->
+                <div class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <p class="rating-display">Rating: 4/5 Stars</p>
+                </div>
+                <label for="rating-input-3">Rate this product (1-5 stars):</label>
+                <input type="number" id="rating-input-3" min="1" max="5">
+                <button class="submit-rating" data-product="3">Submit Rating</button>
+
+                <!-- Review Section -->
+                <div class="review-section">
+                    <h4>Reviews</h4>
+                    <div class="comments">
+                        <p>"Great value for money." - User5</p>
+                        <p>"Really happy with my purchase!" - User6</p>
+                    </div>
+                    <textarea id="comment-input-3" placeholder="Leave a review"></textarea>
+                    <button class="submit-comment" data-product="3">Submit Comment</button>
+                </div>
+
+                <button class="add-to-cart" data-product="3">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Section 2 -->
+    <section class="products">
+        <h2>More Products</h2>
+        <div class="product-list">
+            <!-- Product 4 -->
+            <div class="product" id="product-4">
+                <img src="C:\Users\gunda\OneDrive\Desktop\html\images\bracelet" alt="Product 4">
+                <h3>Product 4</h3>
+                <p>25.00</p>
+
+                <!-- Rating System -->
+                <div class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <p class="rating-display">Rating: 3/5 Stars</p>
+                </div>
+                <label for="rating-input-4">Rate this product (1-5 stars):</label>
+                <input type="number" id="rating-input-4" min="1" max="5">
+                <button class="submit-rating" data-product="4">Submit Rating</button>
+
+                <!-- Review Section -->
+                <div class="review-section">
+                    <h4>Reviews</h4>
+                    <div class="comments">
+                        <p>"Nice, but could be better." - User7</p>
+                    </div>
+                    <textarea id="comment-input-4" placeholder="Leave a review"></textarea>
+                    <button class="submit-comment" data-product="4">Submit Comment</button>
+                </div>
+
+                <button class="add-to-cart" data-product="4">Add to Cart</button>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product" id="product-5">
+                <img src="C:\Users\gunda\OneDrive\Desktop\html\images\braclet2" alt="Product 5">
+                <h3>Product 5</h3>
+                <p>40.00</p>
+
+                <!-- Rating System -->
+                <div class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <p class="rating-display">Rating: 4/5 Stars</p>
+                </div>
+                <label for="rating-input-5">Rate this product (1-5 stars):</label>
+                <input type="number" id="rating-input-5" min="1" max="5">
+                <button class="submit-rating" data-product="5">Submit Rating</button>
+
+                <!-- Review Section -->
+                <div class="review-section">
+                    <h4>Reviews</h4>
+                    <div class="comments">
+                        <p>"Great purchase, I'm satisfied." - User8</p>
+                    </div>
+                    <textarea id="comment-input-5" placeholder="Leave a review"></textarea>
+                    <button class="submit-comment" data-product="5">Submit Comment</button>
+                </div>
+
+                <button class="add-to-cart" data-product="5">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 ShopNow. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
